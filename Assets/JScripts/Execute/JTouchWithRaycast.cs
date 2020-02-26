@@ -67,5 +67,11 @@ namespace JLibrary.Touch
                 _touchWithRaycastInfo.HitPoint = Vector3.zero;
             }
         }
+        public static void DeleteAction()
+        {
+            TouchDown = null;
+            TouchSet = null;
+            TouchUp = null;
+        }
     }
 }

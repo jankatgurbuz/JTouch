@@ -2,6 +2,6 @@
 
 public enum TouchController
 {
-    JTouch = 0,
-    JTouchWithRaycast = 1
+    Touch = 0,
+    TouchWithRaycast = 1
 }

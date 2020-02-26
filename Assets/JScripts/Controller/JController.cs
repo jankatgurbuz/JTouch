@@ -7,7 +7,7 @@ namespace JLibrary.Touch
 {
     public class JController : MonoBehaviour
     {
-        public TouchController _touchController = TouchController.JTouch;
+        public TouchController _touchController = TouchController.Touch;
 
         public Camera MainCamera;
         public static Camera Camera;
@@ -36,11 +36,11 @@ namespace JLibrary.Touch
         {
             switch (_touchController)
             {
-                case TouchController.JTouch:
-                    _jTouchList[(int)TouchController.JTouch].Execute();
+                case TouchController.Touch:
+                    _jTouchList[(int)TouchController.Touch].Execute();
                     break;
-                case TouchController.JTouchWithRaycast:
-                    _jTouchList[(int)TouchController.JTouchWithRaycast].Execute();
+                case TouchController.TouchWithRaycast:
+                    _jTouchList[(int)TouchController.TouchWithRaycast].Execute();
                     break;
                 default:
                     break;
